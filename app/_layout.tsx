@@ -7,7 +7,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Theme, ThemeProvider } from '@react-navigation/native'
 import { PortalHost } from '@rn-primitives/portal'
 
-import { ThemeToggle } from '@/components/ThemeToggle'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { NAV_THEME } from '~/constants/color'
 import { useColorScheme } from '~/hooks/useColorScheme'
 import { setAndroidNavigationBar } from '~/utils/android-navigation-bar'

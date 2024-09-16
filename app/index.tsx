@@ -3,7 +3,7 @@ import { View } from 'react-native'
 
 import Animated, { FadeInUp, FadeOutDown, LayoutAnimationConfig } from 'react-native-reanimated'
 
-import { Info } from '@/components/icons/Info'
+import Iconify from '@/components/icon'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import {
@@ -45,10 +45,10 @@ export default function Screen() {
                         </CardDescription>
                         <Tooltip delayDuration={150}>
                             <TooltipTrigger className='px-2 pb-0.5 active:opacity-50'>
-                                <Info
+                                <Iconify
+                                    icon='solar:info-circle-broken'
                                     size={14}
-                                    strokeWidth={2.5}
-                                    className='w-4 h-4 text-foreground/70'
+                                    className='text-foreground/70'
                                 />
                             </TooltipTrigger>
                             <TooltipContent className='py-2 px-4 shadow'>

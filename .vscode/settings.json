@@ -1,3 +1,16 @@
 {
-    "css.lint.unknownAtRules": "ignore"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "css.lint.unknownAtRules": "ignore",
+    "tailwindCSS.experimental.classRegex": [
+        ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+        ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+        ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]
+    ],
+    "workbench.editor.customLabels.patterns": {
+        "**/app/**/index.tsx": "${dirname} - Index",
+        "**/app/**/_layout.tsx": "${dirname} - Layout",
+        "**/components/**/**.tsx": "${filename} - Component",
+        "**/src/**/**.tsx": "${filename} - ${dirname}",
+        "**/src/**/**.ts": "${filename} - ${dirname}"
+    }
 }
